@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 #prevent error
-sudo rpm -Uvh https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el8.x86_64.rpm
+#sudo rpm -Uvh https://download.docker.com/linux/centos/8/x86_64/stable/Packages/containerd.io-1.4.6-3.1.el8.x86_64.rpm
 # Auto Script For Teslamate
 curl -L "https://raw.githubusercontent.com/teslacloud9/teslamate/master/centos/docker-ce.repo" -o docker-ce.repo
 sudo yum-config-manager --add-repo ./docker-ce.repo
