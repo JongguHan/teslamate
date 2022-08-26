@@ -7,7 +7,7 @@ services:
     environment:
       - ENCRYPTION_KEY= c2eb4f96-1fad-11ed-861d-0242ac120002
       - DATABASE_USER=teslamate
-      - DATABASE_PASS= secret
+      - DATABASE_PASS=secret
       - DATABASE_NAME=teslamate
       - DATABASE_HOST=database
       - MQTT_HOST=mosquitto
@@ -23,7 +23,7 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=teslamate
-      - POSTGRES_PASSWORD= secret
+      - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=teslamate
     volumes:
       - teslamate-db:/var/lib/postgresql/data
@@ -33,7 +33,7 @@ services:
     restart: always
     environment:
       - DATABASE_USER=teslamate
-      - DATABASE_PASS= secret
+      - DATABASE_PASS=secret
       - DATABASE_NAME=teslamate
       - DATABASE_HOST=database
     ports:
